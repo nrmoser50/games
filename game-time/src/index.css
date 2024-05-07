@@ -1,13 +1,153 @@
+/* index.css */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f6d9e4; /* Ethereal pink background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main {
+  text-align: center;
+}
+
+.content {
+  padding: 0;
+  color: #333; /* Text color */
+}
+
+.landing-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Stack items vertically */
+  height: 1rem 1rem 1rem; /* Adjust as needed */
+}
+
+.games-page {
+  text-align: center;
+}
+
+.game-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.game-links li {
+  margin-bottom: 10px;
+}
+
+.game-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  display: block;
+  padding: 10px 10px;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.tic-tac-toe {
+  width: 100%; /* Set the width of the TicTacToe board */
+  margin: 0 auto; /* Center align the board */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  font-size: 2rem; /* Increase the font size of squares */
+  width: 100px; /* Increase the width of squares */
+  height: 100px; /* Increase the height of squares */
+  margin: 5px; /* Add some margin between squares */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status {
+  margin-bottom: 10px; /* Add margin between status and the board */
+}
+
+.buttons {
+  margin-top: 20px; /* Add margin above the buttons */
+}
+
+.buttons button {
+  margin-right: 10px; /* Add margin between buttons */
+}
+
+.return-home {
+  color: blue;
+  text-decoration: none;
+  margin-left: 10px; /* Add margin to the left of the "Return to Home Page" link */
+}
+
+
+/* TicTacToe.css */
+
+.tic-tac-toe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  font-size: 24px;
+}
+
+.game-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.reset-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.return-home-link {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+
+

@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LandingPage from './LandingPage'; 
+import GamesPage from './Components/Games/GamesPage'; 
+import TicTacToe from './Components/Games/TicTacToe'; // Update the import path for TicTacToe component
+import './index.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <header className="header">
+          <nav className="navbar">
+            <div className="container">
+              <h1 className="logo">Game Time</h1>
+              {/* Add navigation links here */}
+            </div>
+          </nav>
+        </header>
+        <main className="content">
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/games" element={<GamesPage />} />
+            <Route path="/games/TicTacToe" element={<TicTacToe />} />
+            {/* Add more routes here for other games */}
+          </Routes>
+        </main>
+        <footer className="footer">
+          <div className="container">
+            {/* Footer content */}
+          </div>
+        </footer>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
